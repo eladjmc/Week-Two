@@ -28,3 +28,21 @@ By typing a bad password you will get an error message describing the issue.
 ./password-validator.sh "PRRRRRRRRRR13"
 "Password does not contain a mix of digits, upper case and lower case letters!"
 ```
+
+# feature (:
+Now it is possible to put the password in a file and check the validity of it with the same requirements.
+
+## Usage
+
+```python
+./password-validator.sh -f "password.txt"                                  (P@ssworD123)
+"Password is Valid!"
+```
+By picking a file with a bad password you will get an error message describing the issue.
+
+```python
+./password-validator.sh -f "password.txt"                                  (PRRRRRRRRRR13)
+"Password does not contain a mix of digits, upper case and lower case letters!"
+```
+
+
